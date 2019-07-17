@@ -1,0 +1,60 @@
+
+SOAP IN:
+
+<S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+	<S:Header/>
+	<S:Body>
+		<ns2:QueryDeviceRequest xmlns:ns2="http://www.vodafone.qatar.com/AIA/NumberManagement">
+			<ns2:FilterCriteria>
+				<ns2:ChannelName>ECR</ns2:ChannelName>
+				<ns2:TypeSpc>getNumberList</ns2:TypeSpc>
+			</ns2:FilterCriteria>
+			<ns2:QueryCriteria>
+				<ns2:maxNumbers>5</ns2:maxNumbers>
+				<ns2:serviceType>Mobile</ns2:serviceType>
+				<ns2:Status>Locked</ns2:Status>
+			</ns2:QueryCriteria>
+		</ns2:QueryDeviceRequest>
+	</S:Body>
+</S:Envelope>
+
+
+SOAP OUT: 
+
+
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	<env:Header>
+		<wsa:MessageID>urn:330E2B70972C11E5BFA5AF4D5327D0CA</wsa:MessageID>
+		<wsa:RelatesTo>urn:330E2B70972C11E5BFA5AF4D5327D0CA</wsa:RelatesTo>
+		<wsa:ReplyTo>
+			<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+			<wsa:ReferenceParameters>
+				<instra:tracking.ecid xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">3c5dd2687377b28a:-418beaea:151524f6ca8:-8000-00000000002bff2f</instra:tracking.ecid>
+				<instra:tracking.conversationId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">urn:330E2B70972C11E5BFA5AF4D5327D0CA</instra:tracking.conversationId>
+			</wsa:ReferenceParameters>
+		</wsa:ReplyTo>
+		<wsa:FaultTo>
+			<wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+			<wsa:ReferenceParameters>
+				<instra:tracking.ecid xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">3c5dd2687377b28a:-418beaea:151524f6ca8:-8000-00000000002bff2f</instra:tracking.ecid>
+				<instra:tracking.conversationId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">urn:330E2B70972C11E5BFA5AF4D5327D0CA</instra:tracking.conversationId>
+			</wsa:ReferenceParameters>
+		</wsa:FaultTo>
+	</env:Header>
+	<env:Body>
+		<UpdateDeviceStatusResponse xmlns="http://www.vodafone.qatar.com/AIA/NumberManagement" xmlns:ns5="http://www.vodafone.qatar.com/AIA/NumberManagement">
+			<ns5:ResponseSummary>
+				<ns5:Details>
+					<![CDATA[[Error] :3:1289: cvc-pattern-valid: Value &apos;&apos; is not facet-valid with respect to pattern &apos;[0-9]{8}&apos; for type &apos;#AnonType_numberlockBodyEnvelope&apos;. ]]>
+				</ns5:Details>
+				<ns5:ResponseCode>CLIENT</ns5:ResponseCode>
+				<ns5:ResponseMessage>
+					<![CDATA[[Error] :3:1289: cvc-pattern-valid: Value &apos;&apos; is not facet-valid with respect to pattern &apos;[0-9]{8}&apos; for type &apos;#AnonType_numberlockBodyEnvelope&apos;. ]]>
+				</ns5:ResponseMessage>
+			</ns5:ResponseSummary>
+			<ns5:UpdateValues/>
+		</UpdateDeviceStatusResponse>
+	</env:Body>
+</env:Envelope>
+
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing"><env:Header><wsa:MessageID>urn:330E2B70972C11E5BFA5AF4D5327D0CA</wsa:MessageID><wsa:RelatesTo>urn:330E2B70972C11E5BFA5AF4D5327D0CA</wsa:RelatesTo><wsa:ReplyTo><wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address><wsa:ReferenceParameters><instra:tracking.ecid xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">3c5dd2687377b28a:-418beaea:151524f6ca8:-8000-00000000002bff2f</instra:tracking.ecid><instra:tracking.conversationId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">urn:330E2B70972C11E5BFA5AF4D5327D0CA</instra:tracking.conversationId></wsa:ReferenceParameters></wsa:ReplyTo><wsa:FaultTo><wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address><wsa:ReferenceParameters><instra:tracking.ecid xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">3c5dd2687377b28a:-418beaea:151524f6ca8:-8000-00000000002bff2f</instra:tracking.ecid><instra:tracking.conversationId xmlns:instra="http://xmlns.oracle.com/sca/tracking/1.0">urn:330E2B70972C11E5BFA5AF4D5327D0CA</instra:tracking.conversationId></wsa:ReferenceParameters></wsa:FaultTo></env:Header><env:Body><UpdateDeviceStatusResponse xmlns="http://www.vodafone.qatar.com/AIA/NumberManagement" xmlns:ns5="http://www.vodafone.qatar.com/AIA/NumberManagement"><ns5:ResponseSummary><ns5:Details><![CDATA[[Error] :3:1289: cvc-pattern-valid: Value &apos;&apos; is not facet-valid with respect to pattern &apos;[0-9]{8}&apos; for type &apos;#AnonType_numberlockBodyEnvelope&apos;. ]]></ns5:Details><ns5:ResponseCode>CLIENT</ns5:ResponseCode><ns5:ResponseMessage><![CDATA[[Error] :3:1289: cvc-pattern-valid: Value &apos;&apos; is not facet-valid with respect to pattern &apos;[0-9]{8}&apos; for type &apos;#AnonType_numberlockBodyEnvelope&apos;. ]]></ns5:ResponseMessage></ns5:ResponseSummary><ns5:UpdateValues/></UpdateDeviceStatusResponse></env:Body></env:Envelope>
