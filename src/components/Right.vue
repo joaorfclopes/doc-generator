@@ -83,7 +83,7 @@
         <div id="doc-content">
           <v-flex xs12 class="header">
             <v-flex xs4 id="logo">
-              <img src="../assets/celfocus-logo.png">
+              <img src="../assets/logo.png">
             </v-flex>
             <v-flex xs4 id="project">
               <h2>
@@ -415,7 +415,7 @@
         <div id="doc-content">
           <v-flex xs12 class="header">
             <v-flex xs4 id="logo">
-              <img src="../assets/celfocus-logo.png">
+              <img src="../assets/logo.png">
             </v-flex>
             <v-flex xs4 id="project">
               <h2>
